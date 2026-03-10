@@ -456,8 +456,8 @@ PODS:
   - hermes-engine (250829098.0.9):
     - hermes-engine/Pre-built (= 250829098.0.9)
   - hermes-engine/Pre-built (250829098.0.9)
-  - libavif/core (0.11.1)
-  - libavif/libdav1d (0.11.1):
+  - libavif/core (1.0.0)
+  - libavif/libdav1d (1.0.0):
     - libavif/core
     - libdav1d (>= 0.6.0)
   - libdav1d (1.2.0)
@@ -487,7 +487,7 @@ PODS:
   - OHHTTPStubs/NSURLSession (9.1.0):
     - OHHTTPStubs/Core
   - OHHTTPStubs/OHPathHelpers (9.1.0)
-  - Quick (7.3.0)
+  - Quick (7.3.1)
   - RCTDeprecation (0.84.1)
   - RCTRequired (0.84.1)
   - RCTSwiftUI (0.84.1)
@@ -2340,7 +2340,7 @@ PODS:
     - React-utils (= 0.84.1)
     - ReactNativeDependencies
   - ReactNativeDependencies (0.84.1)
-  - RNScreens (4.23.0):
+  - RNScreens (4.24.0):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -2362,9 +2362,9 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
-    - RNScreens/common (= 4.23.0)
+    - RNScreens/common (= 4.24.0)
     - Yoga
-  - RNScreens/common (4.23.0):
+  - RNScreens/common (4.24.0):
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -2387,10 +2387,10 @@ PODS:
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
     - Yoga
-  - SDWebImage (5.21.0):
-    - SDWebImage/Core (= 5.21.0)
-  - SDWebImage/Core (5.21.0)
-  - SDWebImageAVIFCoder (0.11.0):
+  - SDWebImage (5.21.7):
+    - SDWebImage/Core (= 5.21.7)
+  - SDWebImage/Core (5.21.7)
+  - SDWebImageAVIFCoder (0.11.1):
     - libavif/core (>= 0.11.0)
     - SDWebImage (~> 5.10)
   - SDWebImageSVGCoder (1.7.0):
@@ -2741,7 +2741,7 @@ SPEC CHECKSUMS:
   ExpoClipboard: ea1c19f29543c3f84abcbc500c6f1a62d954fd5c
   ExpoImage: 37c1d7411df45995ffcd8fb6a9e20f5e1d5aab8e
   ExpoMediaLibrary: 68ca21908d9063c823a89b05ec8354b819e6302c
-  ExpoModulesCore: 508ed85e09365da55806d07ac706a4dec3009152
+  ExpoModulesCore: 72dba87a5a1967b1f7e49401f94c6bb29778f496
   ExpoModulesJSI: 1733437df661254d42bc5b1f030e6ba30b758b63
   ExpoModulesTestCore: 382d7b11f61dd661215fbe33d8ce6c95d6c09e99
   ExpoNotifications: 0293112699b35aa26f6e9e1fcecee0323f3187dc
@@ -2750,13 +2750,13 @@ SPEC CHECKSUMS:
   EXUpdates: c5a64985f393cf4f8beb4463f86a885c90b4fccc
   EXUpdatesInterface: 26412751a0f7a7130614655929e316f684552aab
   FBLazyVector: e97c19a5a442429d1988f182a1940fb08df514da
-  hermes-engine: f17b9ba9fc7fc0b2418d3f51964ef51edd76cb49
-  libavif: 84bbb62fb232c3018d6f1bab79beea87e35de7b7
+  hermes-engine: 5c320fabe3e510313ea299532d9e815ca9333d2e
+  libavif: 5f8e715bea24debec477006f21ef9e95432e254d
   libdav1d: 23581a4d8ec811ff171ed5e2e05cd27bad64c39f
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
   Nimble: 97d90931cca412a23224ff29e258809f75c258f7
   OHHTTPStubs: 90eac6d8f2c18317baeca36698523dc67c513831
-  Quick: d32871931c05547cb4e0bc9009d66a18b50d8558
+  Quick: 83e25bf349dd84f894b024f48033274512d6129b
   RCTDeprecation: af44b104091a34482596cd9bd7e8d90c4e9b4bd7
   RCTRequired: bb77b070f75f53398ce43c0aaaa58337cebe2bf6
   RCTSwiftUI: afc0a0a635860da1040a0b894bfd529da06d7810
@@ -2766,7 +2766,7 @@ SPEC CHECKSUMS:
   React: 1ba7d364ade7d883a1ec055bfc3606f35fdee17b
   React-callinvoker: bc2a26f8d84fb01f003fc6de6c9337b64715f95b
   React-Core: bdaa87b276ca31877632a982ecf7c36f8c826414
-  React-Core-prebuilt: 16897048f81e83bf8f9473af6f8d70c8f1dc5287
+  React-Core-prebuilt: 7d70ead61027fb476ed49a32db93a357c3a0afc8
   React-CoreModules: b24989f62d56390ae08ca4f65e6f38fe6802de42
   React-cxxreact: 1a2dfcbc18a6b610664dba152adf327f063a0d12
   React-debug: 755200a6e7f5e6e0a40ff8d215493d43cce285fc
@@ -2828,10 +2828,10 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: 26bbf1e26768d08dd965a2b5e372e53f67b21fee
   ReactCodegen: 439eae7164a2e4d8ad6ee5c9ea31ac8f407b750d
   ReactCommon: 309419492d417c4cbb87af06f67735afa40ecb9d
-  ReactNativeDependencies: 93d9dfd8d94d83cd1aadc34b61c7579dc744f3f4
-  RNScreens: fb11b7412bcbdc0ffafcaf9174938d998d4e2bc4
-  SDWebImage: f84b0feeb08d2d11e6a9b843cb06d75ebf5b8868
-  SDWebImageAVIFCoder: 00310d246aab3232ce77f1d8f0076f8c4b021d90
+  ReactNativeDependencies: 2b0ef0e96e3fa70fbce3bb1cb1af56622db827fc
+  RNScreens: 088d923c4327c63c9f8c942cae17a9d038f47d97
+  SDWebImage: e9fc87c1aab89a8ab1bbd74eba378c6f53be8abf
+  SDWebImageAVIFCoder: afe194a084e851f70228e4be35ef651df0fc5c57
   SDWebImageSVGCoder: 15a300a97ec1c8ac958f009c02220ac0402e936c
   SDWebImageWebPCoder: e38c0a70396191361d60c092933e22c20d5b1380
   Yoga: c0b3f2c7e8d3e327e450223a2414ca3fa296b9a2

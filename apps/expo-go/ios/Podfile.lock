@@ -274,7 +274,6 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNWorklets
     - SocketRocket
     - Yoga
   - ExpoModulesCore/Tests (55.0.12):
@@ -306,7 +305,6 @@ PODS:
     - ReactCodegen
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
-    - RNWorklets
     - SocketRocket
     - Yoga
   - ExpoModulesJSI (55.0.12):
@@ -324,6 +322,10 @@ PODS:
     - Nimble (~> 13.0.0)
     - Quick (~> 7.3.0)
     - React-hermes
+  - ExpoModulesWorklets (55.0.12):
+    - ExpoModulesCore
+    - ExpoModulesJSI
+    - RNWorklets
   - ExpoNetwork (55.0.8):
     - ExpoModulesCore
   - ExpoNotifications (55.0.10):
@@ -4155,6 +4157,7 @@ DEPENDENCIES:
   - ExpoModulesJSI (from `../../../packages/expo-modules-core`)
   - ExpoModulesJSI/Tests (from `../../../packages/expo-modules-core`)
   - ExpoModulesTestCore (from `../../../packages/expo-modules-test-core/ios`)
+  - ExpoModulesWorklets (from `../../../packages/expo-modules-core`)
   - ExpoNetwork (from `../../../packages/expo-network/ios`)
   - ExpoNotifications (from `../../../packages/expo-notifications/ios`)
   - ExpoNotifications/Tests (from `../../../packages/expo-notifications/ios`)
@@ -4437,6 +4440,8 @@ EXTERNAL SOURCES:
     :path: "../../../packages/expo-modules-core"
   ExpoModulesTestCore:
     :path: "../../../packages/expo-modules-test-core/ios"
+  ExpoModulesWorklets:
+    :path: "../../../packages/expo-modules-core"
   ExpoNetwork:
     :path: "../../../packages/expo-network/ios"
   ExpoNotifications:
@@ -4729,9 +4734,10 @@ SPEC CHECKSUMS:
   ExpoMailComposer: abf514c6a2488fbb62cde3b798bee6d6bf49a88f
   ExpoMediaLibrary: 68ca21908d9063c823a89b05ec8354b819e6302c
   ExpoMeshGradient: 3cf846fe392cee87c16d3208d03326712fe1c906
-  ExpoModulesCore: 3e87295dd856fde4cc61a5a9be19c0dae5732fa2
+  ExpoModulesCore: 8bffa92159ddb9c1d870c7b52d844c0e02391df8
   ExpoModulesJSI: 1733437df661254d42bc5b1f030e6ba30b758b63
   ExpoModulesTestCore: 382d7b11f61dd661215fbe33d8ce6c95d6c09e99
+  ExpoModulesWorklets: 2c6c5808f0af3d2b508282c32707bcaf4723d04f
   ExpoNetwork: 018e4e16afdaff30c5002fadf64daab55bc20de0
   ExpoNotifications: 0293112699b35aa26f6e9e1fcecee0323f3187dc
   ExpoPrint: 744a2ca8033698b749389290d96f4ec836027aed
@@ -4745,7 +4751,7 @@ SPEC CHECKSUMS:
   ExpoSpeech: cedb9452193282ab67cd6c6b06e0ffa6c4e2754f
   ExpoSQLite: c01882b3ce0d20ad2351213dbd081a6e0e1f8837
   ExpoStoreReview: 661278660a03dfdd2c9877b9b177f777b3514262
-  ExpoSymbols: 237882b097b55437cf37b36b21d8a4892f07e782
+  ExpoSymbols: ecd3db8a3f67a1a247c7a75e0e891a89f0a3e08e
   ExpoSystemUI: c4c5b9ba9a5a4713c70f3d68c3bcf3221f2198f2
   ExpoTaskManager: 1a197d3c489d5ed7ae824f7d6b98404e3a662ff2
   ExpoTrackingTransparency: a45cd07cbab513b38c44a146f522aefbf4f6dfdf
@@ -4770,7 +4776,7 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 8a82b93a6400c8e6551c0bcd66a9177f2e067aed
   GoogleDataTransport: aae35b7ea0c09004c3797d53c8c41f66f219d6a7
   GoogleUtilities: 26a3abef001b6533cf678d3eb38fd3f614b7872d
-  hermes-engine: 00d01f3145a01aca9d0940d02c403832806eaf82
+  hermes-engine: e6507098251087e4e389d8e3de7287eb515af73b
   libavif: 84bbb62fb232c3018d6f1bab79beea87e35de7b7
   libdav1d: 23581a4d8ec811ff171ed5e2e05cd27bad64c39f
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8

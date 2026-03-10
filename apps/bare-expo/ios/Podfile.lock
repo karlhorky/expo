@@ -477,7 +477,6 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
-    - RNWorklets
     - Yoga
   - ExpoModulesCore/Tests (55.0.12):
     - ExpoModulesJSI
@@ -503,7 +502,6 @@ PODS:
     - ReactCommon/turbomodule/bridging
     - ReactCommon/turbomodule/core
     - ReactNativeDependencies
-    - RNWorklets
     - Yoga
   - ExpoModulesJSI (55.0.12):
     - hermes-engine
@@ -520,6 +518,10 @@ PODS:
     - Nimble (~> 13.0.0)
     - Quick (~> 7.3.0)
     - React-hermes
+  - ExpoModulesWorklets (55.0.12):
+    - ExpoModulesCore
+    - ExpoModulesJSI
+    - RNWorklets
   - ExpoNetwork (55.0.8):
     - ExpoModulesCore
   - ExpoNotifications (55.0.10):
@@ -3141,6 +3143,7 @@ PODS:
   - UMAppLoader (55.0.2)
   - WorkletsTester (0.0.1):
     - ExpoModulesCore
+    - ExpoModulesWorklets
     - hermes-engine
     - RCTRequired
     - RCTTypeSafety
@@ -3238,6 +3241,7 @@ DEPENDENCIES:
   - ExpoModulesJSI (from `../../../packages/expo-modules-core`)
   - ExpoModulesJSI/Tests (from `../../../packages/expo-modules-core`)
   - ExpoModulesTestCore (from `../../../packages/expo-modules-test-core/ios`)
+  - ExpoModulesWorklets (from `../../../packages/expo-modules-core`)
   - ExpoNetwork (from `../../../packages/expo-network/ios`)
   - ExpoNotifications (from `../../../packages/expo-notifications/ios`)
   - ExpoNotifications/Tests (from `../../../packages/expo-notifications/ios`)
@@ -3547,6 +3551,9 @@ EXTERNAL SOURCES:
     :path: "../../../packages/expo-modules-core"
   ExpoModulesTestCore:
     :path: "../../../packages/expo-modules-test-core/ios"
+  ExpoModulesWorklets:
+    inhibit_warnings: false
+    :path: "../../../packages/expo-modules-core"
   ExpoNetwork:
     inhibit_warnings: false
     :path: "../../../packages/expo-network/ios"
@@ -3871,9 +3878,10 @@ SPEC CHECKSUMS:
   ExpoMaps: cc2eaf2c1a27a7f8c816224be7bf02bc8721fedf
   ExpoMediaLibrary: 68ca21908d9063c823a89b05ec8354b819e6302c
   ExpoMeshGradient: 3cf846fe392cee87c16d3208d03326712fe1c906
-  ExpoModulesCore: 016a2f03f03228ba431d595bf180769f0a02af28
+  ExpoModulesCore: 72dba87a5a1967b1f7e49401f94c6bb29778f496
   ExpoModulesJSI: 1733437df661254d42bc5b1f030e6ba30b758b63
   ExpoModulesTestCore: 382d7b11f61dd661215fbe33d8ce6c95d6c09e99
+  ExpoModulesWorklets: 2c6c5808f0af3d2b508282c32707bcaf4723d04f
   ExpoNetwork: 018e4e16afdaff30c5002fadf64daab55bc20de0
   ExpoNotifications: 0293112699b35aa26f6e9e1fcecee0323f3187dc
   ExpoPrint: 744a2ca8033698b749389290d96f4ec836027aed
@@ -3888,7 +3896,7 @@ SPEC CHECKSUMS:
   ExpoSplashScreen: 1ad4b0ceabf66f739f34d92ef767283ba8d42f9c
   ExpoSQLite: c01882b3ce0d20ad2351213dbd081a6e0e1f8837
   ExpoStoreReview: 661278660a03dfdd2c9877b9b177f777b3514262
-  ExpoSymbols: 237882b097b55437cf37b36b21d8a4892f07e782
+  ExpoSymbols: ecd3db8a3f67a1a247c7a75e0e891a89f0a3e08e
   ExpoSystemUI: c4c5b9ba9a5a4713c70f3d68c3bcf3221f2198f2
   ExpoTaskManager: 1a197d3c489d5ed7ae824f7d6b98404e3a662ff2
   ExpoTrackingTransparency: a45cd07cbab513b38c44a146f522aefbf4f6dfdf
@@ -3900,7 +3908,7 @@ SPEC CHECKSUMS:
   EXUpdates: c5a64985f393cf4f8beb4463f86a885c90b4fccc
   EXUpdatesInterface: 26412751a0f7a7130614655929e316f684552aab
   FBLazyVector: e97c19a5a442429d1988f182a1940fb08df514da
-  hermes-engine: 2322b1974d93af0d15d30d5bafd5886cd7475677
+  hermes-engine: 5c320fabe3e510313ea299532d9e815ca9333d2e
   libavif: 84bbb62fb232c3018d6f1bab79beea87e35de7b7
   libdav1d: 23581a4d8ec811ff171ed5e2e05cd27bad64c39f
   libwebp: 02b23773aedb6ff1fd38cec7a77b81414c6842a8
@@ -3918,7 +3926,7 @@ SPEC CHECKSUMS:
   React: 1ba7d364ade7d883a1ec055bfc3606f35fdee17b
   React-callinvoker: bc2a26f8d84fb01f003fc6de6c9337b64715f95b
   React-Core: bdaa87b276ca31877632a982ecf7c36f8c826414
-  React-Core-prebuilt: 3a18d3c3d7f34cd70923b0b359b41e78163d9877
+  React-Core-prebuilt: 747e1d4383db38522ae3763f987c0ca64809dac7
   React-CoreModules: b24989f62d56390ae08ca4f65e6f38fe6802de42
   React-cxxreact: 1a2dfcbc18a6b610664dba152adf327f063a0d12
   React-debug: 755200a6e7f5e6e0a40ff8d215493d43cce285fc
@@ -3988,7 +3996,7 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: 26bbf1e26768d08dd965a2b5e372e53f67b21fee
   ReactCodegen: 3737b2746b303ce8636a461f8ee4cb2525078267
   ReactCommon: 309419492d417c4cbb87af06f67735afa40ecb9d
-  ReactNativeDependencies: e7a1b2c1da219bfbb50fab4af2d5a18d2ddbf770
+  ReactNativeDependencies: 3837044e54ef2e73eb3960cbd70e5d55a3755aee
   RNCAsyncStorage: e85a99325df9eb0191a6ee2b2a842644c7eb29f4
   RNCMaskedView: 3c9d7586e2b9bbab573591dcb823918bc4668005
   RNCPicker: e0149590451d5eae242cf686014a6f6d808f93c7
@@ -4004,7 +4012,7 @@ SPEC CHECKSUMS:
   SDWebImageWebPCoder: e38c0a70396191361d60c092933e22c20d5b1380
   TestExpoUi: 3c8a53d43492d7db3f4c94cf4a48cba7a82da424
   UMAppLoader: 71b50bcc31d86495e52c0b4cd17e2708bf297be3
-  WorkletsTester: f76956000cdf163c71f8eb20fe09f1bfa21acbaf
+  WorkletsTester: faedf72d22e2def2440a4e84f4ea15e68ccd91f7
   Yoga: c0b3f2c7e8d3e327e450223a2414ca3fa296b9a2
   ZXingObjC: 8898711ab495761b2dbbdec76d90164a6d7e14c5
 
